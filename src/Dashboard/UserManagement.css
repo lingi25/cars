@@ -1,0 +1,113 @@
+/* Container Styling */
+.userman-user-management {
+    display: flex;
+    
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Gradient dark background */
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Adjusted container width and centering */
+.userman-user-management-content {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px;
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(100, 200, 255, 0.5); /* Enhanced glowing shadow */
+    margin: 0 auto;
+    overflow-x: auto;
+    transition: transform 0.3s ease; /* Smooth content transition */
+}
+
+.userman-user-management-content:hover {
+    transform: translateY(-5px); /* Subtle hover lift effect */
+}
+
+/* Header Styling */
+.userman {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #90e0ef; /* Softer cyan color for the heading */
+    text-shadow: 0 2px 10px rgba(144, 224, 239, 0.6); /* Glow effect on text */
+}
+
+/* Table Styling */
+.userman-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #282c34;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.userman-user-table th,
+.userman-user-table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.userman-user-table th {
+    background: linear-gradient(135deg, #444, #666);
+    color: #90e0ef;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.userman-user-table td {
+    color: #fd2f2f;
+}
+
+/* Profile Picture Styling */
+.userman-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #90e0ef;
+    box-shadow: 0 0 10px rgba(144, 224, 239, 0.5); /* Subtle glow around profile pics */
+}
+
+/* Button Styling */
+.userman-button,
+.userman-remove-button {
+    background: linear-gradient(135deg, #90e0ef, #0077b6);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 0 8px;
+}
+
+.userman-button:hover,
+.userman-remove-button:hover {
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(100, 200, 255, 0.5);
+}
+
+.userman-button:focus,
+.userman-remove-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(144, 224, 239, 0.4);
+}
+
+/* Remove Button Specific Styling */
+.userman-remove-button {
+    background: linear-gradient(135deg, #ef476f, #d32f2f);
+}
+
+.userman-remove-button:hover {
+    background: linear-gradient(135deg, #d32f2f, #9d1d1d);
+}

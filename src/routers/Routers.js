@@ -15,9 +15,18 @@ import Register from "../pages/Register"
 import Productslist from "../pages/productslist"
 import Cart from "../components/UI/Cart";
 import License from "../components/UI/License";
-import AdminDashboard from"../pages/Admindashboard";
 import  Payment  from "../pages/Payment";
-import Paymentnew from"../pages/paymentaccess"
+import Paymentnew from"../pages/paymentaccess";
+import AdminDashboard from "../Dashboard/AdminDashboard.js";
+import UserDashboard from "../Dashboard/UserDashboard.js";
+import UserManagement from "../Dashboard/UserManagement.js";
+import ReportPage from "../Dashboard/ReportPage.js";
+import SettingsPage from "../Dashboard/SettingsPage.js";
+import ServiceReport from "../Dashboard/ServiceReport.js";
+import RentalReport from "../Dashboard/RentalReport.js";
+import AccessoriesReport from "../Dashboard/AccessoriesReport.js";
+import GridView from "../Dashboard/GridView.js";
+import EditUser from "../Dashboard/EditUser.jsx";
 const Routers = () => {
   return (
     <Routes>
@@ -36,9 +45,18 @@ const Routers = () => {
       <Route path="/Products" element={<Productslist/>}/>
       <Route path="/Cart" element={<Cart/>}/>
       <Route path="/License" element={<License/>}/>
-      <Route path="/Admin" element={<AdminDashboard/>}/>
       <Route path="/payment" element={<Payment/>}/>
       <Route path="/paymentnew" element={<Paymentnew/>}/>
+      <Route path="/UserDashboard" element={<UserDashboard />}></Route>
+      <Route path="/AdminDashboard" element={<AdminDashboard />}></Route>  
+      <Route path='/UserManagement' element={<UserManagement/>}></Route> 
+      <Route path='/ReportPage' element={<ReportPage/>}></Route> 
+      <Route path='/SettingsPage' element={<SettingsPage/>}></Route> 
+      <Route path='/ServiceReport' element={<ServiceReport/>}></Route> 
+      <Route path='/RentalReport' element={<RentalReport/>}></Route> 
+      <Route path='/AccessoriesReport' element={<AccessoriesReport/>}></Route> 
+      <Route path='/GridView' element={<GridView/>}></Route> 
+      <Route path="/edit-user/:id" element={<EditUser />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

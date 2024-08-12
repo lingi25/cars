@@ -15,7 +15,7 @@ const Login = () => {
     // Check if the login is for admin
     if (email === 'admin@gmail.com' && password === 'asd') {
       setMessage('Admin login successful!');
-      navigate('/Admin');
+      navigate('/AdminDashboard');
       return;
     }
 
@@ -62,7 +62,6 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
       {message && <p className="message">{message}</p>}
-      <Link to="/home" className="home-link">Go to Home</Link>
     </div>
   );
 };
